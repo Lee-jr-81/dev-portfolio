@@ -5,14 +5,17 @@ const links = ["RSS", "GitHub", "Privacy Policy"];
 
 export function Footer() {
   return (
-    <footer id="contact" className="border-t border-foreground/10 bg-foreground/5 px-6 py-16">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+    <footer
+      id="contact"
+      className="full-bleed border-t border-foreground/10 bg-foreground/5 py-24"
+    >
+      <div className="container">
+        <div className="grid gap-16 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h4 className="text-sm font-medium uppercase tracking-wider text-foreground/60">
               Overview
             </h4>
-            <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+            <p className="mt-4 text-body text-foreground/80">
               Short summary about you and how to get in touch.
             </p>
           </div>
@@ -67,7 +70,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="mt-16 text-center text-sm text-foreground/50">
+        <p className="mt-24 text-center text-body text-foreground/50">
           © {new Date().getFullYear()} Your Name. All rights reserved.
         </p>
       </div>
