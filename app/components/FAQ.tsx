@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "How do you approach new projects?",
     answer:
-      "I prefer clearly defined outcomes and constraints before development begins. Once scope is agreed, I focus on structured delivery, clean architecture, and slotting into existing workflows with minimal disruption.",
+      "I prefer clearly defined outcomes and constraints before development begins. Once scope is agreed and design is provided, I focus on structured delivery, clean architecture, and slotting into existing workflows with minimal disruption.",
   },
   {
     question: "What technologies do you typically work with?",

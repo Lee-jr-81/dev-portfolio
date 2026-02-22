@@ -16,12 +16,13 @@ export function Hero() {
       </div>
 
       {/* Bottom: Split 50/50 */}
-      <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 md:pb-40">
+      <div className="flex flex-col gap-8 md:mt-2 mt-20 lg:flex-row lg:items-center lg:gap-16 md:pb-40">
         {/* Left: Headings + description */}
         <div className="flex-1 space-y-2 md:space-y-4">
           <h1 className="text-headline text-foreground/80">NextJS Developer</h1>
           <p className="max-w-xl md:text-lead text-lg text-foreground/70 leading-snug">
-            I focus on delivering fast, stable and trade grade web applications.
+            Trade-grade engineering, applied to modern web applications — fast,
+            stable, and built to last.
           </p>
         </div>
 
