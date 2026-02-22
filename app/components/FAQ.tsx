@@ -62,17 +62,23 @@ export function FAQ() {
 
                   {/* Icon stays aligned with the first line and never shrinks */}
                   <Plus
-                    className={`mt-1 size-5 shrink-0 text-foreground/50 transition-transform duration-200 ${
+                    className={`mt-1 size-5 shrink-0 text-foreground/50 transition-transform duration-500 ease-out ${
                       isOpen ? "rotate-45" : ""
                     }`}
                   />
                 </button>
 
-                {isOpen && (
-                  <p className="pb-6 text-body text-foreground/70">
-                    {faq.answer}
-                  </p>
-                )}
+                <div
+                  className={`grid transition-[grid-template-rows] duration-500 ease-out ${
+                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                  }`}
+                >
+                  <div className="min-h-0 overflow-hidden">
+                    <p className="pb-6 text-body text-foreground/70">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               </div>
             );
           })}

@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Forge Architecture",
-    tag: "New",
+    tag: null,
     slug: "#",
     image: "/project-five.jpg",
   },
