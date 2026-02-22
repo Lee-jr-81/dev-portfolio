@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { MapPin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -27,7 +26,7 @@ export function Hero() {
         </div>
 
         {/* Right: Avatar + location */}
-        <div className="mt-32 flex flex-1 flex-col items-start gap-4 lg:mt-0 lg:items-end">
+        <div className="mt-32 flex flex-1 flex-col gap-2 lg:mt-0 items-end">
           <div className="relative size-28 shrink-0 overflow-hidden rounded-full border-4 border-primary lg:size-40">
             <Image
               src="/lee.png"
@@ -37,9 +36,10 @@ export function Hero() {
               sizes="(max-width: 1024px) 12rem, 14rem"
             />
           </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="size-6 color-red-500" />
-            <h2 className="text-lead text-foreground/70">Birmingham, UK</h2>
+          <div className="flex items-center">
+            <h2 className="md:text-lead text-md text-foreground/70">
+              Birmingham, UK
+            </h2>
           </div>
         </div>
       </div>
