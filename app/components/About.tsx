@@ -66,9 +66,11 @@ export function About() {
                 <p className="text-body text-foreground/80">
                   Today I apply the same mindset to my software. I build modern
                   web applications using Next.js and full-stack tooling, with an
-                  emphasis on clarity, performance, and maintainability. I care
-                  less about trends and more about building systems that are
-                  clean, scalable, and engineered to last.
+                  emphasis on clarity, performance, and maintainability. I
+                  operate my development process in the same way i did my
+                  electrical business. My clients rely on me to step in when
+                  needed and just get the job done. I provide peace of mind and
+                  responsibility handled.
                 </p>
               </div>
               <a
