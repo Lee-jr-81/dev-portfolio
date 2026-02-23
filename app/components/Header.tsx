@@ -20,7 +20,7 @@ export function Header() {
 
         <nav className="flex items-center gap-8">
           <Link
-            href="#contact"
+            href="/contact"
             className="rounded-full bg-primary px-5 py-2.5 text-sm md:text-body font-medium text-white hover:opacity-90"
           >
             Get in touch
