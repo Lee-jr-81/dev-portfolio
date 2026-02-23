@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: Props) {
             />
           </div>
           <article
-            className="project-content text-md text-foreground/80 [&_h1]:mb-4 [&_h1]:text-headline [&_h1]:text-foreground [&_h2]:mb-3 [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_p]:mb-4 [&_p]:leading-relaxed [&_a]:text-primary [&_a]:underline [&_a:hover]:opacity-90"
+            className="project-content text-md text-foreground/80 [&_h1]:mb-4 [&_h1]:font-semibold [&_h1]:text-xl [&_h1]:text-foreground [&_h2]:mb-3 [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_p]:mb-4 [&_p]:leading-relaxed [&_a]:text-primary [&_a]:underline [&_a:hover]:opacity-90"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
           <Link
