@@ -3,16 +3,14 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="flex flex-col pt-16 md:pt-32 md:pb-4 pb-24">
-      {/* Top: Full-width image */}
-      <div className="mb-6 mt-12 w-full overflow-hidden sm:mb-12 lg:mb-32">
-        <Image
-          src="/hero_image.png"
-          alt=""
-          width={1600}
-          height={900}
-          className="w-full object-cover"
-          priority
-        />
+      {/* Top: Typographic hero - works in light and dark mode */}
+      <div className="mb-6 mt-12 w-full sm:mb-12 lg:mb-32">
+        <h2
+          className="font-bold leading-display md:text-foreground"
+          style={{ fontSize: "clamp(3rem, 8vw, 10rem)" }}
+        >
+          Lee Williams<span className="text-primary">.</span>
+        </h2>
       </div>
 
       {/* Bottom: Split 50/50 */}
