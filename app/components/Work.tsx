@@ -1,32 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-
-const projects = [
-  {
-    title: "AdventureReady.UK",
-    tag: null,
-    slug: "#",
-    image: "/project-one.jpg",
-  },
-  {
-    title: "Minted",
-    tag: null,
-    slug: "#",
-    image: "/project-two.jpg",
-  },
-  {
-    title: "Forge Architecture",
-    tag: null,
-    slug: "#",
-    image: "/project-five.jpg",
-  },
-  {
-    title: "Bluephase Electrical",
-    tag: null,
-    slug: "#",
-    image: "/project-four.jpg",
-  },
-];
+import { projects } from "@/lib/projects";
 
 export function Work() {
   return (
@@ -40,9 +13,9 @@ export function Work() {
         </div>
         <div className="mt-12 grid gap-16 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map((project) => (
-            <Link
+            <a
               key={project.title}
-              href={project.slug}
+              href={`/projects/${project.slug}`}
               className="group block"
             >
               <div className="relative aspect-4/3 overflow-hidden rounded-lg border border-foreground/10 bg-foreground/5 transition-colors group-hover:bg-foreground/10">
@@ -64,7 +37,7 @@ export function Work() {
                   </span>
                 )}
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
