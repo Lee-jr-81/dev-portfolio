@@ -69,7 +69,7 @@ export default async function ProjectPage({ params }: Props) {
           />
           <Link
             href="/"
-            className="mt-12 inline-block rounded-full bg-primary px-5 py-2.5 text-body font-medium text-white transition-colors duration-300 hover:opacity-90"
+            className="mt-12 inline-block rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:opacity-90"
           >
             Return home
           </Link>
