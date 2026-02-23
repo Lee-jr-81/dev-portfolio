@@ -26,7 +26,7 @@ export function Hero() {
 
         {/* Right: Avatar + location */}
         <div className="mt-32 flex flex-1 flex-col gap-2 lg:mt-0 items-end">
-          <div className="relative size-28 shrink-0 overflow-hidden rounded-full border-4 border-foreground lg:size-40">
+          <div className="relative size-28 shrink-0 overflow-hidden rounded-full border-4 border-gray-500 lg:size-40">
             <Image
               src="/lee.png"
               alt="Lee's avatar"
