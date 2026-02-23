@@ -39,7 +39,7 @@ export function About() {
       <div>
         <div className="grid gap-24 lg:grid-cols-2 lg:gap-32">
           <div className="">
-            <div className="relative size-20 mb-4 shrink-0 overflow-hidden rounded-full border-4 border-gray-500 lg:size-40">
+            <div className="relative size-20 mb-4 shrink-0 overflow-hidden rounded-full border-4 border-primary lg:size-40">
               <Image
                 src="/lee.png"
                 alt="Lee's avatar"
