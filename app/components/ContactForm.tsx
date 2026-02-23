@@ -40,7 +40,7 @@ export function ContactForm() {
     }).toString();
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body,
@@ -60,9 +60,6 @@ export function ContactForm() {
   return (
     <form
       name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit(onSubmit)}
       className="space-y-6"
     >
