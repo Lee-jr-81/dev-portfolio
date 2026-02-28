@@ -40,7 +40,7 @@ export function ContactForm() {
     }).toString();
 
     try {
-      const response = await fetch("/__forms", {
+      const response = await fetch("/netlify-forms", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body,
