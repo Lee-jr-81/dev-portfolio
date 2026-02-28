@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CheckCircle2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -158,19 +159,26 @@ export function ContactForm() {
       </button>
 
       {submitStatus === "success" && (
-        <div className="space-y-4 rounded-lg bg-green-100 px-4 py-4 dark:bg-green-900/30">
-          <p
-            className="text-body font-medium text-green-700 dark:text-green-400"
-            role="status"
-          >
-            Thanks! Your message has been sent. I&apos;ll get back to you soon.
-          </p>
-          <Link
-            href="/"
-            className="inline-block rounded-full bg-green-700 px-5 py-2.5 text-body font-medium text-white transition-colors duration-300 hover:opacity-90"
-          >
-            Return home
-          </Link>
+        <div className="animate-in fade-in duration-500 rounded-lg border border-foreground/10 bg-foreground/[0.02] p-6">
+          <div className="flex items-start gap-3">
+            <CheckCircle2 className="size-5 shrink-0 text-primary mt-0.5" />
+            <div className="flex-1 space-y-3">
+              <div>
+                <p className="text-body font-medium text-foreground" role="status">
+                  Message sent successfully
+                </p>
+                <p className="mt-1 text-sm text-foreground/60">
+                  Thanks for reaching out. I&apos;ll get back to you soon.
+                </p>
+              </div>
+              <Link
+                href="/"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:opacity-90"
+              >
+                Return home
+              </Link>
+            </div>
+          </div>
         </div>
       )}
 
