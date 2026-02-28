@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/netlify-forms"],
+      disallow: ["/__forms.html"],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
   };
