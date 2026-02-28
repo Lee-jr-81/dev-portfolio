@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +10,41 @@ import {
 } from "@/lib/projects";
 
 type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const meta = getProjectMeta(slug);
+
+  if (!meta) {
+    return { title: "Project" };
+  }
+
+  return {
+    title: meta.title,
+    description: meta.blurb,
+    alternates: {
+      canonical: `/projects/${slug}`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.blurb,
+      url: `/projects/${slug}`,
+      images: [
+        {
+          url: meta.image,
+          width: 1200,
+          height: 630,
+          alt: meta.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.blurb,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   return getProjectSlugs().map((slug) => ({ slug }));

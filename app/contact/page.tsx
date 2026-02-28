@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import { Header } from "@/app/components/Header";
 import { ContactForm } from "@/app/components/ContactForm";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Lee Williams for your next web project. Fast, stable, trade-grade web applications.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact | Lee Williams",
+    description:
+      "Get in touch with Lee Williams for your next web project. Fast, stable, trade-grade web applications.",
+  },
+};
 
 export default function ContactPage() {
   return (
