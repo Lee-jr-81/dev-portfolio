@@ -59,7 +59,6 @@ export function ContactForm() {
 
   return (
     <form
-      name="contact"
       onSubmit={handleSubmit(onSubmit)}
       className="space-y-6"
     >
