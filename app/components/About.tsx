@@ -57,7 +57,7 @@ export function About() {
               </h3>
               <div className="space-y-8">
                 <p className="text-body text-foreground/80">
-                  I spent 24 years as an electrician solving real-world problems
+                  I spent 22 years as an electrician solving real-world problems
                   — designing systems, diagnosing faults, running a business,
                   and delivering solutions that had to work safely and reliably
                   in the physical world. That experience shaped how I think:

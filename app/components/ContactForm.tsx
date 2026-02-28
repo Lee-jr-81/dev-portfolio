@@ -159,12 +159,15 @@ export function ContactForm() {
       </button>
 
       {submitStatus === "success" && (
-        <div className="animate-in fade-in duration-500 rounded-lg border border-foreground/10 bg-foreground/[0.02] p-6">
+        <div className="animate-in fade-in duration-500 rounded-lg border border-foreground/10 bg-foreground/2 p-6">
           <div className="flex items-start gap-3">
             <CheckCircle2 className="size-5 shrink-0 text-primary mt-0.5" />
             <div className="flex-1 space-y-3">
               <div>
-                <p className="text-body font-medium text-foreground" role="status">
+                <p
+                  className="text-body font-medium text-foreground"
+                  role="status"
+                >
                   Message sent successfully
                 </p>
                 <p className="mt-1 text-sm text-foreground/60">

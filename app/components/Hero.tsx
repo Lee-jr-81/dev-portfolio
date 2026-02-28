@@ -19,8 +19,10 @@ export function Hero() {
         <div className="flex-1 space-y-2 md:space-y-4">
           <h1 className="text-headline text-foreground/80">NextJS Developer</h1>
           <p className="max-w-xl md:text-lead text-lg text-foreground/70 leading-snug">
-            Trade-grade engineering, applied to modern web applications — fast,
-            stable, and built to last.
+            Trade-grade engineering, applied to modern web applications — I
+            approach software the same way a good tradesman approaches their
+            craft: measure twice, build once. The very best standard of
+            workmanship.
           </p>
         </div>
 
