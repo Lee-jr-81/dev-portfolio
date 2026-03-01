@@ -36,9 +36,9 @@ export function TrustedBy() {
           <div className="space-y-8">
             <p className="text-body text-foreground/80">
               When I&apos;m not building applications, I&apos;m usually working
-              on miniature worlds or small living ecosystems. I enjoy the craft
-              — taking something from raw to refined, balancing structure and
-              creativity, and seeing a system come together intentionally.
+              on small living ecosystems. I love nature and interacting with
+              mini ecosystems. — Failing that you will find me in the workshop
+              creating an unholy amount of sawdust.
             </p>
           </div>
         </div>
