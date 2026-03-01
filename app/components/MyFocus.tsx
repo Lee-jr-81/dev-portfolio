@@ -62,10 +62,12 @@ export function MyFocus() {
     <section className="border-t border-foreground/10 py-40">
       <div>
         <div className=" max-w-3xl">
-          <h2 className="text-sm mb-2 font-medium uppercase tracking-wider text-foreground/60">
+          <h2 className="text-sm md:mb-0 mb-2 font-medium uppercase tracking-wider text-foreground/60">
             What I Build
           </h2>
-          <h3 className="text-headline font-semibold mb-12">My Focus Areas</h3>
+          <h3 className="text-headline font-semibold mb-12 md:mb-4">
+            My Focus Areas
+          </h3>
           <p className="text-body text-foreground/80">
             I specialise in two distinct types of projects for agencies —
             full-stack applications and high-performance marketing sites. Each
@@ -78,17 +80,20 @@ export function MyFocus() {
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
           {/* Next.js Card */}
           <div className="rounded-2xl border border-foreground/10 bg-foreground/2 p-8 md:p-10">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="relative size-12 shrink-0">
-                <Image
-                  src={focuses.nextjs.logo}
-                  alt="Next.js logo"
-                  fill
-                  className="object-contain"
-                />
+            <div className="mb-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="relative size-8 shrink-0">
+                  <Image
+                    src={focuses.nextjs.logo}
+                    alt="Next.js logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-4xl font-semibold">Next.js</span>
               </div>
               <div>
-                <h4 className="text-2xl font-semibold">
+                <h4 className="md:text-2xl text-lg  font-semibold text-primary">
                   {focuses.nextjs.title}
                 </h4>
                 <p className="text-sm text-foreground/60">
@@ -111,17 +116,20 @@ export function MyFocus() {
 
           {/* Astro Card */}
           <div className="rounded-2xl border border-foreground/10 bg-foreground/2 p-8 md:p-10">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="relative size-12 shrink-0">
-                <Image
-                  src={focuses.astro.logo}
-                  alt="Astro logo"
-                  fill
-                  className="object-contain"
-                />
+            <div className="mb-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="relative size-8 shrink-0">
+                  <Image
+                    src={focuses.astro.logo}
+                    alt="Astro logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-4xl font-semibold">Astro</span>
               </div>
               <div>
-                <h4 className="text-2xl font-semibold">
+                <h4 className="md:text-2xl text-lg font-semibold text-primary">
                   {focuses.astro.title}
                 </h4>
                 <p className="text-sm text-foreground/60">
