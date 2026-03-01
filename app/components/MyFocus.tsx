@@ -155,7 +155,7 @@ export function MyFocus() {
         <div className="mt-8">
           <div className="rounded-2xl border border-foreground/10 bg-foreground/2 p-8 md:p-10">
             <div className="mb-8 text-center md:text-left">
-              <h4 className="text-2xl font-semibold">Core Stack & Tools</h4>
+              <h4 className="text-2xl font-semibold">My Core Tools</h4>
               <p className="text-sm text-foreground/60">
                 Reliable, production-tested tooling
               </p>

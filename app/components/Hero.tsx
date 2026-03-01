@@ -14,7 +14,7 @@ export function Hero() {
       </div>
 
       {/* Bottom: Split 50/50 */}
-      <div className="flex flex-col gap-8 md:mt-2 mt-20 lg:flex-row lg:items-center lg:gap-16 md:pb-40">
+      <div className="flex flex-col gap-8 md:mt-2 mt-10 lg:flex-row lg:items-center lg:gap-16 md:pb-40">
         {/* Left: Headings + description */}
         <div className="flex-1 space-y-2 md:space-y-4">
           <h1 className="text-headline text-foreground/80">NextJS Developer</h1>
