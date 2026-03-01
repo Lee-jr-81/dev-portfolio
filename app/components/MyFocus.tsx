@@ -62,11 +62,11 @@ export function MyFocus() {
     <section className="border-t border-foreground/10 py-40">
       <div>
         <div className=" max-w-3xl">
-          <h2 className="text-sm md:mb-0 mb-2 font-medium uppercase tracking-wider text-foreground/60">
-            What I Build
+          <h2 className="text-sm md:mb-0 mb-1 font-medium uppercase tracking-wider text-foreground/60">
+            What I Focus On
           </h2>
-          <h3 className="text-headline font-semibold mb-12 md:mb-4">
-            My Focus Areas
+          <h3 className="text-headline font-semibold mb-6 md:mb-4">
+            My Core Systems
           </h3>
           <p className="text-body text-foreground/80">
             I specialise in two distinct types of projects for agencies —
@@ -207,11 +207,12 @@ export function MyFocus() {
               </div>
 
               <div className="flex flex-col items-center gap-3 text-center">
-                <div className="size-12 flex items-center justify-center text-foreground">
-                  <img
+                <div className="relative size-12">
+                  <Image
                     src="/github-logo.svg"
                     alt="GitHub"
-                    className="size-12 object-contain"
+                    fill
+                    className="object-contain dark:invert"
                   />
                 </div>
                 <div>
