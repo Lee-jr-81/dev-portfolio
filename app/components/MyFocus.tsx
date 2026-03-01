@@ -207,12 +207,11 @@ export function MyFocus() {
               </div>
 
               <div className="flex flex-col items-center gap-3 text-center">
-                <div className="relative size-12">
-                  <Image
+                <div className="size-12 flex items-center justify-center text-foreground">
+                  <img
                     src="/github-logo.svg"
                     alt="GitHub"
-                    fill
-                    className="object-contain"
+                    className="size-12 object-contain"
                   />
                 </div>
                 <div>
