@@ -38,7 +38,7 @@ export function TrustedBy() {
               When I&apos;m not building applications, I&apos;m usually working
               on small living environments. I love nature and interacting with
               mini ecosystems. — Failing that you will find me in the workshop
-              creating an unholy amount of sawdust.
+              creating a frankly ridiculous amount of sawdust.
             </p>
           </div>
         </div>
