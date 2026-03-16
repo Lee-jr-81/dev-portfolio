@@ -7,7 +7,7 @@
 
   /* Layout */
   --container-max: 100rem;
-  --container-padding: 1.5rem;
+  --container-padding: clamp(1.5rem, 5vw, 5rem);
 
   /* Editorial spacing */
   --section-space: 8rem; /* 128px */
@@ -36,16 +36,9 @@
   --spacing-section: var(--section-space);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #7d8c4a;
-  }
-}
-
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
 }
 
 body {

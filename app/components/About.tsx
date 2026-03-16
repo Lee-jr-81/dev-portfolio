@@ -57,19 +57,22 @@ export function About() {
               </h3>
               <div className="space-y-8">
                 <p className="text-body text-foreground/80">
-                  I spent 22 years as an electrician solving real-world problems
-                  — designing systems, diagnosing faults, running a business,
-                  and delivering solutions that had to work safely and reliably
-                  in the physical world. That experience shaped how I think:
-                  structured, practical, and focused on outcomes.
+                  I build modern web applications and digital products for
+                  businesses and startups. Using technologies like Next.js and
+                  modern full-stack tooling, I design and develop fast, reliable
+                  systems that are built to scale and easy to maintain.
                 </p>
                 <p className="text-body text-foreground/80">
-                  Today I apply the same mindset to my software. I build modern
-                  web applications using Next.js and full-stack tooling, with an
-                  emphasis on clarity, performance, and maintainability. I
-                  operate my development process in the same trade grade way. My
-                  clients rely on me to step in when needed and just get the job
-                  done. I provide peace of mind and responsibility handled.
+                  My background is in hands-on engineering and problem solving,
+                  where systems had to work safely and reliably in the real
+                  world. That experience shaped how I approach software
+                  development — structured, practical, and focused on delivering
+                  solutions that genuinely work for the businesses using them.
+                </p>
+                <p className="text-body text-foreground/80">
+                  I focus on clarity, performance, and maintainability, building
+                  web applications, platforms, and digital tools that clients
+                  can rely on long after launch.
                 </p>
               </div>
               <a
