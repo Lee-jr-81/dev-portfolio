@@ -1,4 +1,39 @@
 import Image from "next/image";
+import type { LucideIcon } from "lucide-react";
+import { CreditCard, Gauge, Layers, ShieldCheck } from "lucide-react";
+
+type FocusPillar = {
+  Icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+const saasPillars: FocusPillar[] = [
+  {
+    Icon: Layers,
+    title: "Product-shaped engineering",
+    description:
+      "Data models, permissions, and workflows that match how the business actually runs — not a UI bolted onto a spreadsheet.",
+  },
+  {
+    Icon: ShieldCheck,
+    title: "Auth, access, and trust",
+    description:
+      "Secure sign-in, role-aware views, and server-side validation so customers and staff only see what they should.",
+  },
+  {
+    Icon: CreditCard,
+    title: "Monetisation-ready",
+    description:
+      "Subscription and payment flows wired with clear upgrade paths, webhooks, and reconciliation-friendly patterns.",
+  },
+  {
+    Icon: Gauge,
+    title: "Built for real traffic",
+    description:
+      "Performance budgets, observability hooks, and deploy pipelines aimed at uptime under genuine daily use.",
+  },
+];
 
 const focuses = {
   nextjs: {
@@ -70,9 +105,10 @@ export function MyFocus() {
           </h3>
           <p className="text-body text-foreground/80">
             I specialise in two distinct types of projects for agencies —
-            full-stack applications and high-performance marketing sites. Each
-            requires a different approach, different tooling, and different
-            priorities.
+            full-stack applications and high-performance marketing sites. I
+            also take many of those builds through to production SaaS launches
+            for real customers. Each context needs a different approach,
+            tooling, and priorities.
           </p>
         </div>
 
@@ -145,6 +181,47 @@ export function MyFocus() {
                   <p className="mt-2 text-body text-foreground/70">
                     {benefit.description}
                   </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <div className="rounded-2xl border border-foreground/10 bg-foreground/2 p-8 md:p-10">
+            <div className="mb-6">
+              <div className="mb-3 flex items-center gap-3">
+                <div className="relative size-8 shrink-0">
+                  <Image
+                    src="/react-logo.svg"
+                    alt="React logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-4xl font-semibold">React</span>
+              </div>
+              <div>
+                <h4 className="md:text-2xl text-lg font-semibold text-primary">
+                  SaaS & product builds
+                </h4>
+                <p className="text-sm text-foreground/60">
+                  End-to-end delivery for software people pay to use
+                </p>
+              </div>
+            </div>
+            <div className="mt-8 space-y-6">
+              {saasPillars.map(({ Icon, title, description }) => (
+                <div key={title} className="flex gap-4">
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-foreground/10 bg-background">
+                    <Icon className="size-5 text-primary" aria-hidden />
+                  </div>
+                  <div className="min-w-0">
+                    <h5 className="text-lg font-semibold">{title}</h5>
+                    <p className="mt-2 text-body text-foreground/70">
+                      {description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
