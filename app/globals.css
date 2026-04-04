@@ -73,3 +73,122 @@ body {
 .hover\:bg-primary:hover {
   background-color: var(--primary);
 }
+
+/* Case study / project markdown (remark-html output) */
+.project-content {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.project-content :where(h1) {
+  margin-bottom: 1rem;
+  font-size: var(--text-headline);
+  font-weight: 600;
+  line-height: var(--leading-headline);
+  color: var(--foreground);
+}
+
+.project-content :where(h2) {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  line-height: var(--leading-headline);
+  color: var(--foreground);
+}
+
+.project-content :where(h2):first-child {
+  margin-top: 0;
+}
+
+.project-content :where(h3) {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.project-content :where(p) {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.project-content :where(ul, ol) {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
+  list-style-position: outside;
+}
+
+.project-content :where(ul) {
+  list-style-type: disc;
+}
+
+.project-content :where(ol) {
+  list-style-type: decimal;
+}
+
+.project-content :where(li) {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.75;
+}
+
+.project-content :where(li > ul, li > ol) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content :where(hr) {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+}
+
+.project-content :where(strong) {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.project-content :where(a) {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.project-content :where(a:hover) {
+  opacity: 0.9;
+}
+
+.project-content :where(blockquote) {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid color-mix(in srgb, var(--foreground) 20%, transparent);
+  color: color-mix(in srgb, var(--foreground) 75%, transparent);
+}
+
+.project-content :where(code) {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.9em;
+  padding: 0.15em 0.35em;
+  border-radius: 0.25rem;
+  background: color-mix(in srgb, var(--foreground) 6%, transparent);
+}
+
+.project-content :where(pre) {
+  margin: 1rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.project-content :where(pre code) {
+  padding: 0;
+  background: none;
+  font-size: inherit;
+}

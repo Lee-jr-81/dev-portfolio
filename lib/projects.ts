@@ -10,9 +10,20 @@ export type Project = {
   image: string;
   tech: string[];
   tag?: string | null;
+  /** Public production URL when the project is live */
+  liveUrl?: string;
 };
 
 export const projects: Project[] = [
+  {
+    slug: "petbase",
+    title: "Petbase",
+    blurb: "Pet records, care, and owner tools in one place.",
+    image: "/project-six.png",
+    tech: ["Next.js", "Supabase", "Tailwind CSS", "Shadcn UI"],
+    tag: null,
+    liveUrl: "https://petbase.co",
+  },
   {
     slug: "adventureready-uk",
     title: "AdventureReady.UK",
@@ -20,6 +31,7 @@ export const projects: Project[] = [
     image: "/project-one.jpg",
     tech: ["Next.js", "Supabase", "Tailwind CSS", "Shadcn UI"],
     tag: null,
+    liveUrl: "https://adventureready.uk",
   },
   {
     slug: "minted",

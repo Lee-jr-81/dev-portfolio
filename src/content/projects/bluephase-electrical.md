@@ -1,55 +1,63 @@
-# Overview
+# BluePhase Electrical
 
-BluePhase Electrical is a locally operated electrical services company providing residential and small commercial installations, maintenance, and compliance work.
+## Overview
 
-The objective of the project was to create a simple, trustworthy online presence that clearly communicates services, certifications, and contact information — positioning the business as reliable, responsive, and safety-focused.
+BluePhase Electrical is a locally operated electrical services company delivering residential and small-scale commercial installations, maintenance, and compliance work.
+
+The project focused on creating a clear, trustworthy online presence that communicates services, qualifications, and contact pathways — positioning the business as reliable, responsive, and safety-focused.
+
+---
 
 ## Challenge
 
-As a local electrical contractor, BluePhase Electrical relies heavily on word-of-mouth referrals and regional visibility.
+As a local contractor, BluePhase Electrical depends on regional visibility and word-of-mouth referrals.
 
 The key challenges were:
 
-Establishing credibility for new customers unfamiliar with the business
-
-Clearly outlining services without overwhelming non-technical clients
-
-Highlighting qualifications and compliance standards
-
-Creating a straightforward path for enquiries and quote requests
+- establishing credibility for new customers unfamiliar with the business
+- explaining services clearly for non-technical audiences
+- highlighting certifications, insurance, and compliance standards
+- providing a simple path for enquiries and quote requests
 
 The site needed to feel dependable and professional, without unnecessary complexity.
 
+---
+
 ## Solution
 
-The website was built with clarity and usability as the primary goals.
+The website was designed with clarity, accessibility, and speed as primary goals.
 
-Key decisions included:
+Key implementation areas included:
 
-A service-focused homepage outlining core offerings (installations, rewiring, fault finding, consumer unit upgrades)
+- **Service-led homepage**  
+  Clear overview of core offerings, including installations, rewiring, fault finding, and consumer unit upgrades
 
-Clear display of certifications, insurance coverage, and safety standards
+- **Trust and compliance signals**  
+  Prominent display of certifications, insurance coverage, and safety standards to build confidence
 
-Strong call-to-action sections encouraging direct contact
+- **Strong call-to-action structure**  
+  Multiple contact points and clear prompts to encourage enquiries and quote requests
 
-Mobile-first design to accommodate users searching for services on the go
+- **Mobile-first design**  
+  Optimised for users searching for local services on mobile devices
 
-The visual design uses a clean layout, strong contrast, and clear typography to reinforce reliability and professionalism.
+- **Clean visual system**  
+  High-contrast layout, clear typography, and simple structure to reinforce reliability and professionalism
 
-Technically, the site was structured for performance and simplicity, ensuring fast load times and ease of future updates.
+- **Performance-focused build**  
+  Lightweight implementation ensuring fast load times and easy future updates
+
+---
 
 ## Outcome
 
-The final result is a clean, trustworthy digital presence that supports BluePhase Electrical’s local reputation.
+The result is a clean, trustworthy digital presence that supports BluePhase Electrical’s local reputation.
 
 The platform provides:
 
-Clear communication of services
+- clear communication of services
+- reinforced credibility through visible qualifications and compliance
+- improved accessibility for enquiries and contact
+- a scalable foundation for future additions such as testimonials and project showcases
 
-Reinforced credibility through qualifications and compliance visibility
-
-Improved enquiry accessibility
-
-A scalable foundation for future additions, such as testimonials or project showcases
-
-The website strengthens the company’s digital footprint and supports continued growth within the local market.
+The site strengthens the company’s digital footprint and supports continued growth within the local market.

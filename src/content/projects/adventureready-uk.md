@@ -1,63 +1,70 @@
-# Overview
+# AdventureReady
 
-AdventureReady is a UK-based adventure vehicle marketplace focused on curated listings from verified dealers. The platform is designed to streamline the buying experience for customers searching for campervans, 4x4 builds, and expedition-ready vehicles.
+## Overview
 
-Rather than operating as an open classifieds site, the marketplace prioritises quality control, dealer verification, and structured listings to create a more trustworthy and efficient purchasing environment
+AdventureReady is a UK-based marketplace for curated adventure vehicles, including campervans, 4x4 builds, and expedition-ready setups.
+
+The platform focuses on quality over volume, prioritising verified dealers, structured listings, and a streamlined browsing experience. Rather than operating as an open classifieds site, AdventureReady is designed to provide a more trustworthy and refined environment for buyers searching for specialist vehicles.
+
+---
 
 ## Challenge
 
-Online vehicle marketplaces can quickly become cluttered, difficult to navigate, and overwhelming — particularly on mobile devices.
+Online vehicle marketplaces are often cluttered, difficult to navigate, and overwhelming — particularly on mobile devices.
 
-The primary challenges included:
+The key challenges were:
 
-Designing an intuitive user journey across a complex listing structure
+- designing a clear and intuitive user journey across complex listing data
+- maintaining performance with dynamic filtering and real-time data
+- ensuring a smooth mobile experience for users browsing on the go
+- building trust through dealer verification and structured listing accuracy
+- balancing SEO requirements with a dynamic, app-like experience
 
-Maintaining performance while handling dynamic filtering and real-time data
+The goal was to create a platform that feels purpose-built and curated, rather than crowded and generic.
 
-Ensuring mobile responsiveness for users browsing on the go
-
-Building trust through dealer verification and structured data accuracy
-
-Balancing SEO requirements with dynamic marketplace functionality
-
-The goal was to create a platform that feels refined and purpose-built, rather than crowded and generic.
+---
 
 ## Solution
 
-The platform was built using Next.js with Supabase powering the backend infrastructure.
+AdventureReady was built as a full-stack marketplace application using:
 
-Key architectural decisions included:
+- Next.js for a performant, SEO-friendly frontend
+- Supabase for authentication, database, and backend services
 
-Server-side rendered (SSR) listing pages to maximise SEO performance
+Key implementation areas included:
 
-Supabase authentication to manage user accounts, dealer access, and gated features
+- **SEO-optimised listing pages**  
+  Server-side rendering (SSR) for individual listings to maximise search visibility and performance
 
-Role-based dashboards for both buyers and verified dealers
+- **Dealer verification and access control**  
+  Supabase authentication combined with role-based access to manage verified dealers and gated features
 
-Dynamic filtering by vehicle type and specification
+- **Dynamic filtering system**  
+  Real-time filtering by vehicle type, specification, and attributes, designed to remain performant at scale
 
-Integration with a UK vehicle data API to pre-populate listings via registration lookup
+- **Vehicle data integration**  
+  Integration with a UK vehicle data API to pre-populate listing information via registration lookup
 
-Membership features to encourage retention and recurring engagement
+- **User and dealer dashboards**  
+  Separate interfaces for buyers and sellers, enabling listing management and account control
 
-Promotional mechanics such as gear discounts and product giveaways
+- **Membership and engagement features**  
+  Early-stage subscription mechanics, including incentives such as gear discounts and promotional campaigns
 
-The system separates listing logic, user management, and membership features into modular components, ensuring scalability as the marketplace expands.
+The system was designed with a modular architecture, separating listing logic, user management, and membership features to support future expansion.
+
+---
 
 ## Outcome
 
-AdventureReady launched earlier this year and is currently focused on strengthening its membership ecosystem and community engagement features.
+AdventureReady is live and actively evolving, with a focus on strengthening its membership model and community engagement.
 
-The platform now provides:
+The platform delivers:
 
-Structured, SEO-optimised listing pages
+- structured, SEO-optimised vehicle listings
+- verified dealer participation
+- integrated vehicle specification data
+- dedicated dashboards for buyers and sellers
+- a foundation for subscription-based growth
 
-Verified dealer participation
-
-Real-time vehicle specification integration
-
-Dedicated dashboards for buyers and sellers
-
-A foundation for subscription-based growth
-
-The product is positioned for iterative expansion, with future development focused on enhancing dealer tools, community interaction, and monetisation strategies.
+The product is positioned for iterative development, with future work focused on enhancing dealer tooling, improving community features, and refining monetisation strategies.

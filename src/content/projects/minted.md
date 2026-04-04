@@ -1,55 +1,70 @@
-# Overview
+# Minted
 
-Minted is a personal finance application designed to simplify asset tracking and long-term wealth planning. Rather than focusing purely on budgeting or expense categorisation, the platform is structured around one core objective: helping users build and optimise assets over time.
+## Overview
 
-The product was built to provide clarity in financial decision-making, with an emphasis on structured growth, long-term projection, and visual feedback
+Minted is a personal finance application focused on asset tracking and long-term wealth planning.
+
+Rather than centring on budgeting or expense categorisation, the platform is designed around a single core objective: helping users build, understand, and optimise their assets over time.
+
+It provides structured insight into financial growth, combining projection, visualisation, and planning tools to support clearer long-term decision-making.
+
+---
 
 ## Challenge
 
-The personal finance space is saturated with tools that focus heavily on budgeting and expense tracking. While these features are valuable, many platforms lack clear long-term asset planning and optimisation tools.
+The personal finance space is saturated with tools that prioritise budgeting and expense tracking.
+
+While useful, many of these platforms lack:
+
+- clear long-term asset planning
+- intuitive growth projections
+- meaningful visual feedback on financial progress
 
 The key challenges were:
 
-Distinguishing the product from traditional budgeting apps
+- differentiating the product from traditional budgeting apps
+- designing a system that feels structured but not overwhelming
+- translating complex financial data into intuitive visual insights
+- implementing projection logic that remains accurate yet understandable
 
-Creating a system that feels structured and relatable rather than overwhelming
+The goal was not to replace existing tools, but to complement them with a stronger focus on asset accumulation and forward planning.
 
-Translating financial data into intuitive visual insights
-
-Designing projection logic that remains accurate yet understandable
-
-The goal was not to replace existing financial tools, but to complement them with a stronger focus on asset accumulation and forward planning.
+---
 
 ## Solution
 
-Minted was developed around a structured financial model that prioritises asset growth as the primary metric of success.
+Minted was built around a structured financial model where asset growth is the primary metric.
 
-Key implementation decisions included:
+Key implementation areas included:
 
-Custom-built calculation algorithms to handle compound growth, contribution forecasting, and asset optimisation
+- **Custom financial modelling**  
+  Algorithms for compound growth, contribution forecasting, and asset optimisation, designed to balance accuracy with usability
 
-Modular data processing to allow for future API integrations
+- **Modular data architecture**  
+  Separation of data processing and calculation logic to support future API integrations and additional financial instruments
 
-Chart.js integration for dynamic, responsive data visualisation
+- **Dynamic data visualisation**  
+  Integration with Chart.js to provide responsive, real-time visual feedback on performance and projections
 
-A simplified input system that reduces friction while maintaining useful depth
+- **Simplified input system**  
+  A user-friendly interface that reduces friction while maintaining sufficient depth for meaningful planning
 
-The architecture separates calculation logic from presentation, ensuring scalability and maintainability as additional financial instruments and integrations are introduced.
+- **Separation of concerns**  
+  Clear division between calculation logic and UI layers, enabling scalability and maintainability as the product evolves
+
+---
 
 ## Outcome
 
-Minted successfully demonstrates a clear product direction centred on long-term financial growth rather than short-term budgeting.
+Minted establishes a clear product direction centred on long-term financial growth rather than short-term budgeting.
 
 The current MVP supports:
 
-Asset tracking
+- asset tracking
+- growth projections
+- visual performance breakdowns
+- structured accumulation planning
 
-Growth projections
+An upcoming integration with a UK-based trading platform API will enable automated portfolio syncing, reducing manual input and improving data accuracy.
 
-Visual performance breakdowns
-
-Structured accumulation planning
-
-An upcoming integration with a UK-based trading platform API will allow for automated portfolio syncing, reducing manual data entry and increasing accuracy.
-
-The product is positioned for iterative development, with user feedback guiding future feature prioritisation and potential monetisation pathways
+The product is designed for iterative development, with future enhancements driven by user feedback and expanding integration capabilities.

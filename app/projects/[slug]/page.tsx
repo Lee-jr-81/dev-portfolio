@@ -74,6 +74,21 @@ export default async function ProjectPage({ params }: Props) {
               {meta.title}
             </h1>
             <p className="mt-2 md:text-body text-foreground/70">{meta.blurb}</p>
+            {meta.liveUrl && (
+              <p className="mt-4">
+                <a
+                  href={meta.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-body font-medium text-primary underline underline-offset-4 transition-opacity hover:opacity-90"
+                >
+                  Visit site
+                  <span className="text-foreground/50" aria-hidden>
+                    ↗
+                  </span>
+                </a>
+              </p>
+            )}
             {meta.tech.length > 0 && (
               <div className="mt-4 flex flex-wrap gap-2">
                 {meta.tech.map((t) => (
@@ -100,7 +115,7 @@ export default async function ProjectPage({ params }: Props) {
             />
           </div>
           <article
-            className="project-content text-md text-foreground/80 [&_h1]:mb-4 [&_h1]:font-semibold [&_h1]:text-xl [&_h1]:text-foreground [&_h2]:mb-3 [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_p]:mb-4 [&_p]:leading-relaxed [&_a]:text-primary [&_a]:underline [&_a:hover]:opacity-90"
+            className="project-content text-foreground/80"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
           <Link
