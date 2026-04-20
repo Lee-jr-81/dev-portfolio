@@ -16,13 +16,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "petbase",
-    title: "Petbase",
+    slug: "zoohh",
+    title: "Zoohh",
     blurb: "Pet records, care, and owner tools in one place.",
     image: "/project-six.png",
     tech: ["Next.js", "Supabase", "Tailwind CSS", "Shadcn UI"],
     tag: null,
-    liveUrl: "https://petbase.co",
+    liveUrl: "https://zoohh.uk",
   },
   {
     slug: "adventureready-uk",
