@@ -27,9 +27,9 @@ const services = [
   },
   {
     number: "05",
-    title: "Codebase Refinement",
+    title: "Security & Light Pen Testing",
     description:
-      "Auditing and improving existing applications for structure, clarity, and long-term maintainability.",
+      "I prioritise security in how I design and ship software. I also run light web penetration tests to catch common vulnerabilities before release.",
   },
 ];
 
