@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 /* -------------------------------------------------------------------------- */
@@ -10,6 +11,9 @@ const PLATFORM_NAME = "workshopOS";
 const CONTACT_HREF = "#contact";
 const SETUP_FEE = 3000;
 const SERVICE_FEE = 99;
+
+/** Screenshot export ratio — 1280×870 px (≈ 1.47:1, or 128:87) */
+const FEATURE_SCREENSHOT_CLASS = "aspect-[1280/870] w-full";
 
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
@@ -57,24 +61,33 @@ function SectionHeading({
   );
 }
 
-function PlaceholderFrame({
-  label,
-  tall = false,
-  className = "",
+function HeroScreenshot({
+  src,
+  alt,
+  className = "min-h-64 flex-1 lg:min-h-0",
+  priority = false,
+  fit = "cover",
 }: {
-  label: string;
-  tall?: boolean;
+  src: string;
+  alt: string;
   className?: string;
+  priority?: boolean;
+  fit?: "cover" | "contain";
 }) {
   return (
     <div
-      className={`flex flex-col justify-end rounded-sm border border-(--mkt-border) bg-(--mkt-surface) p-5 ${tall ? "min-h-88 sm:min-h-104" : "min-h-64 sm:min-h-72"} ${className}`}
-      aria-hidden
+      className={`relative overflow-hidden rounded-sm border border-(--mkt-border) bg-(--mkt-surface) ${className}`}
     >
-      <span className="text-xs font-medium uppercase tracking-[0.12em] text-(--mkt-muted)">
-        Screenshot placeholder
-      </span>
-      <span className="mt-1 text-sm text-(--mkt-graphite)">{label}</span>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className={
+          fit === "contain" ? "object-contain object-center" : "object-cover object-top"
+        }
+        sizes="(max-width: 1024px) 100vw, 45vw"
+        priority={priority}
+      />
     </div>
   );
 }
@@ -153,13 +166,17 @@ export default function MarketingPage() {
               </div>
             </div>
             <div className="flex min-h-0 flex-col gap-4 lg:h-full">
-              <PlaceholderFrame
-                label="Public vehicle detail page"
+              <HeroScreenshot
+                src="/heroPublic.png"
+                alt="Public vehicle detail page"
                 className="min-h-64 flex-1 lg:min-h-0"
+                priority
               />
-              <PlaceholderFrame
-                label="Admin listings dashboard"
+              <HeroScreenshot
+                src="/heroAdmin.png"
+                alt="Admin listings dashboard"
                 className="min-h-64 flex-1 lg:min-h-0"
+                priority
               />
             </div>
           </div>
@@ -294,14 +311,24 @@ export default function MarketingPage() {
                 rebuilding your listings from scratch.
               </p>
             </div>
-            <PlaceholderFrame label="Vehicle detail · sold build still live" tall />
+            <HeroScreenshot
+              src="/buildHero2.png"
+              alt="Vehicle detail · sold build still live"
+              className={FEATURE_SCREENSHOT_CLASS}
+              fit="contain"
+            />
           </div>
         </section>
 
         {/* Split: Dashboard */}
         <section className="px-6 py-24 lg:px-10 lg:py-32">
           <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
-            <PlaceholderFrame label="Admin · listings, media, enquiries" tall />
+            <HeroScreenshot
+              src="/listingHero2.png"
+              alt="Admin · listings, media, enquiries"
+              className={FEATURE_SCREENSHOT_CLASS}
+              fit="contain"
+            />
             <div className="space-y-6 lg:order-0">
               <Eyebrow>Operations</Eyebrow>
               <SectionHeading>An admin your team will actually use</SectionHeading>
@@ -345,7 +372,12 @@ export default function MarketingPage() {
                 </li>
               </ul>
             </div>
-            <PlaceholderFrame label="Conversion package detail page" tall />
+            <HeroScreenshot
+              src="/conversionHero2.png"
+              alt="Conversion package detail page"
+              className={FEATURE_SCREENSHOT_CLASS}
+              fit="contain"
+            />
           </div>
         </section>
 
