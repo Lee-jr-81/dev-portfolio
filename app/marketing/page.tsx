@@ -15,6 +15,13 @@ const SERVICE_FEE = 99;
 /** Screenshot export ratio — 1280×870 px (≈ 1.47:1, or 128:87) */
 const FEATURE_SCREENSHOT_CLASS = "aspect-[1280/870] w-full";
 
+const BTN_CONTACT =
+  "inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-white hover:opacity-90 sm:px-5 md:text-body";
+const BTN_HOME =
+  "inline-flex shrink-0 items-center justify-center rounded-full border border-primary px-4 py-2.5 text-sm font-medium text-primary transition-colors hover:bg-primary/10 sm:px-5 md:text-body";
+const BTN_CONTACT_LG =
+  "inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-white hover:opacity-90";
+
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
   { label: "How it works", href: "#how-it-works" },
@@ -109,8 +116,8 @@ export default function MarketingPage() {
       }
     >
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-(--mkt-border) bg-background/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5 lg:px-10">
+      <header className="full-bleed sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur-sm">
+        <div className="mx-auto flex w-full max-w-(--container-max) items-center justify-between gap-6 px-(--container-padding) py-4">
           <Link
             href="/marketing"
             className="text-xl font-bold tracking-tight text-(--mkt-graphite) sm:text-2xl"
@@ -128,19 +135,21 @@ export default function MarketingPage() {
               </a>
             ))}
           </nav>
-          <a
-            href={CONTACT_HREF}
-            className="inline-flex shrink-0 items-center justify-center rounded-full border border-(--mkt-olive) px-4 py-2 text-sm font-medium text-(--mkt-olive) transition-colors hover:bg-(--mkt-olive) hover:text-white"
-          >
-            Get in touch
-          </a>
+          <div className="flex shrink-0 items-center gap-3 sm:gap-4">
+            <Link href="/" className={BTN_HOME}>
+              Home
+            </Link>
+            <Link href="/contact" className={BTN_CONTACT}>
+              Get in touch
+            </Link>
+          </div>
         </div>
       </header>
 
       <main>
         {/* Hero */}
-        <section className="px-6 pb-24 pt-20 lg:px-10 lg:pb-32 lg:pt-28">
-          <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-20">
+        <section className="pb-24 pt-20 lg:pb-32 lg:pt-28">
+          <div className="mx-auto grid w-full gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-20">
             <div className="max-w-3xl space-y-10">
               <Eyebrow>Managed platform for specialist vehicle businesses</Eyebrow>
               <h1 className="text-balance text-4xl font-semibold leading-[1.08] tracking-tight text-(--mkt-graphite) sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
@@ -151,10 +160,7 @@ export default function MarketingPage() {
                 built to grow as your stock, builds, and services do.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <a
-                  href={CONTACT_HREF}
-                  className="inline-flex items-center justify-center rounded-full bg-(--mkt-olive) px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-(--mkt-olive-dark)"
-                >
+                <a href={CONTACT_HREF} className={BTN_CONTACT_LG}>
                   Get in touch
                 </a>
                 <a
@@ -183,8 +189,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Problem */}
-        <section className="border-y border-(--mkt-border) px-6 py-20 lg:px-10 lg:py-28">
-          <div className="mx-auto max-w-6xl space-y-12">
+        <section className="border-y border-(--mkt-border) py-20 lg:py-28">
+          <div className="mx-auto w-full space-y-12">
             <SectionHeading>Your business has outgrown brochureware</SectionHeading>
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
               {[
@@ -205,8 +211,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Three layers */}
-        <section className="px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto max-w-6xl space-y-16">
+        <section className="py-24 lg:py-32">
+          <div className="mx-auto w-full space-y-16">
             <div className="max-w-2xl space-y-5">
               <Eyebrow>The platform</Eyebrow>
               <SectionHeading>One foundation. Three layers that work together.</SectionHeading>
@@ -240,8 +246,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Features */}
-        <section id="features" className="scroll-mt-24 px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto max-w-6xl space-y-16">
+        <section id="features" className="scroll-mt-24 lg:py-32">
+          <div className="mx-auto w-full space-y-16">
             <div className="max-w-2xl space-y-5">
               <Eyebrow>Features</Eyebrow>
               <SectionHeading>Everything a specialist vehicle business needs online</SectionHeading>
@@ -295,8 +301,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Split: SEO */}
-        <section className="border-t border-(--mkt-border) px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
+        <section className="border-t border-(--mkt-border) lg:py-32">
+          <div className="mx-auto grid w-full gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
             <div className="space-y-6">
               <Eyebrow>Long-term value</Eyebrow>
               <SectionHeading>Every listing is a long-term asset</SectionHeading>
@@ -321,8 +327,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Split: Dashboard */}
-        <section className="px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
+        <section className="py-24 lg:py-32">
+          <div className="mx-auto grid w-full gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
             <HeroScreenshot
               src="/listingHero2.png"
               alt="Admin · listings, media, enquiries"
@@ -347,8 +353,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Split: Niche */}
-        <section className="border-t border-(--mkt-border) px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
+        <section className="border-t border-(--mkt-border) lg:py-32">
+          <div className="mx-auto grid w-full gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
             <div className="space-y-6">
               <Eyebrow>Purpose-built</Eyebrow>
               <SectionHeading>Not a template. Not a marketplace.</SectionHeading>
@@ -382,8 +388,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Who it's for */}
-        <section className="px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto max-w-6xl space-y-16">
+        <section className="py-24 lg:py-32">
+          <div className="mx-auto w-full space-y-16">
             <div className="max-w-2xl space-y-5">
               <Eyebrow>Who it&apos;s for</Eyebrow>
               <SectionHeading>Built for how specialist vehicle businesses sell</SectionHeading>
@@ -422,9 +428,9 @@ export default function MarketingPage() {
         {/* How it works */}
         <section
           id="how-it-works"
-          className="scroll-mt-24 border-y border-(--mkt-border) px-6 py-24 lg:px-10 lg:py-32"
+          className="scroll-mt-24 border-y border-(--mkt-border) lg:py-32"
         >
-          <div className="mx-auto max-w-6xl space-y-16">
+          <div className="mx-auto w-full space-y-16">
             <div className="max-w-2xl space-y-5">
               <Eyebrow>Deployment</Eyebrow>
               <SectionHeading>From first conversation to live infrastructure</SectionHeading>
@@ -469,8 +475,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Pricing */}
-        <section id="pricing" className="scroll-mt-24 px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto max-w-6xl space-y-16">
+        <section id="pricing" className="scroll-mt-24 lg:py-32">
+          <div className="mx-auto w-full space-y-16">
             <div className="max-w-2xl space-y-5">
               <Eyebrow>Pricing</Eyebrow>
               <SectionHeading>Straightforward pricing</SectionHeading>
@@ -515,8 +521,8 @@ export default function MarketingPage() {
         </section>
 
         {/* Roadmap */}
-        <section className="border-t border-(--mkt-border) px-6 py-24 lg:px-10 lg:py-32">
-          <div className="mx-auto max-w-6xl space-y-16">
+        <section className="border-t border-(--mkt-border) lg:py-32">
+          <div className="mx-auto w-full space-y-16">
             <div className="max-w-2xl space-y-5">
               <Eyebrow>Grow with the platform</Eyebrow>
               <SectionHeading>Expansions when you&apos;re ready</SectionHeading>
@@ -554,7 +560,7 @@ export default function MarketingPage() {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-24 px-6 py-24 lg:px-10 lg:py-32">
+        <section id="faq" className="scroll-mt-24 lg:py-32">
           <div className="mx-auto max-w-3xl space-y-12">
             <div className="space-y-5">
               <Eyebrow>FAQ</Eyebrow>
@@ -611,7 +617,7 @@ export default function MarketingPage() {
         {/* Final CTA */}
         <section
           id="contact"
-          className="scroll-mt-24 border-t border-(--mkt-border) px-6 py-24 lg:px-10 lg:py-32"
+          className="scroll-mt-24 border-t border-(--mkt-border) lg:py-32"
         >
           <div className="mx-auto max-w-3xl space-y-8 text-center">
             <Eyebrow>Get started</Eyebrow>
@@ -623,18 +629,15 @@ export default function MarketingPage() {
               want a modern platform behind it — get in touch to talk through fit, timeline,
               and deployment.
             </p>
-            <a
-              href={CONTACT_HREF}
-              className="inline-flex items-center justify-center rounded-full bg-(--mkt-olive) px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-(--mkt-olive-dark)"
-            >
+            <a href={CONTACT_HREF} className={BTN_CONTACT_LG}>
               Get in touch
             </a>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-(--mkt-border) px-6 py-10 lg:px-10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <footer className="border-t border-(--mkt-border) py-10">
+        <div className="mx-auto flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-(--mkt-muted)">
             © {new Date().getFullYear()} {PLATFORM_NAME}. All rights reserved.
           </p>

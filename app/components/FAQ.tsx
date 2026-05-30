@@ -23,12 +23,12 @@ const faqs = [
   {
     question: "Do you take on short-term or ongoing work?",
     answer:
-      "Both. Im available for defined short-term builds as well as longer-term collaboration where structured engineering support is required.",
+      "Both. I'm available for defined short-term builds as well as longer-term collaboration where structured engineering support is required.",
   },
   {
     question: "What kind of projects are a good fit?",
     answer:
-      "Content and marketing sites are always fun. I enjoy the client handover and seeing the project come to life. A strong marketplace or saas app is always fun too.",
+      "Strong fits include marketing sites for teams that care about performance and long-term maintainability, marketplaces, and SaaS products. I work best when there is a clear brief, existing design direction, or an in-house team to collaborate with.",
   },
 ];
 

@@ -1,11 +1,11 @@
-import { Brush, Leaf, Motorbike, Hammer } from "lucide-react";
+import { Camera, Compass, Leaf, Swords } from "lucide-react";
 
 const items = [
   {
-    title: "Motorcycle Travel",
+    title: "Travel",
     description:
-      "Exploring the world on two wheels. I love discovering new places and returning home richer.",
-    icon: Motorbike,
+      "Adventure on and off the road — discovering new places, cultures, and landscapes, and bringing that perspective back home.",
+    icon: Compass,
   },
   {
     title: "Mini Environments",
@@ -14,16 +14,16 @@ const items = [
     icon: Leaf,
   },
   {
-    title: "Timber Craft",
+    title: "Photography & Exploration",
     description:
-      "I like building real things with my hands. Woodworking, carpentry, and building my own furniture.",
-    icon: Hammer,
+      "Documenting places and moments through the lens. Composition, patience, and noticing detail — the same instincts I bring to engineering.",
+    icon: Camera,
   },
   {
-    title: "Miniature Painting",
+    title: "Muay Thai",
     description:
-      "Patience, detail work, and finishing touches. I enjoy the 3d printing and assembly of characters.",
-    icon: Brush,
+      "Discipline, consistency, and showing up. Training keeps me grounded, focused, and sharp away from the screen.",
+    icon: Swords,
   },
 ];
 
@@ -35,10 +35,12 @@ export function TrustedBy() {
           <h3 className="text-5xl font-semibold">Who I Am Outside of Code</h3>
           <div className="space-y-8">
             <p className="text-body text-foreground/80">
-              When I&apos;m not building applications, I&apos;m usually working
-              on small living environments. I love nature and interacting with
-              mini ecosystems. — Failing that you will find me in the workshop
-              creating a frankly ridiculous amount of sawdust.
+              When I&apos;m not building applications, I&apos;m usually
+              travelling, exploring, or behind a camera — drawn to adventure,
+              open landscapes, and the kind of places that reset how you think.
+              I still love small living environments and mini ecosystems. And
+              when I need to switch off properly, you&apos;ll find me on the
+              mats training Muay Thai.
             </p>
           </div>
         </div>

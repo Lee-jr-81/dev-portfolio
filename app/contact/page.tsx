@@ -5,12 +5,12 @@ import { ContactForm } from "@/app/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Lee Williams for your next web project. Fast, stable, trade-grade web applications.",
+    "Partner enquiry — agency overflow and production-grade Next.js delivery. Birmingham, UK; working with clients across the UK.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact | Lee Williams",
     description:
-      "Get in touch with Lee Williams for your next web project. Fast, stable, trade-grade web applications.",
+      "Partner enquiry — agency overflow and production-grade Next.js delivery. Birmingham, UK; working with clients across the UK.",
   },
 };
 
@@ -20,9 +20,13 @@ export default function ContactPage() {
       <Header />
       <main className="min-h-screen pt-24 pb-20">
         <div className="mx-auto max-w-xl px-(--container-padding)">
-          <h1 className="text-headline mb-2">Get in touch</h1>
+          <h1 className="text-headline mb-2">Partner enquiry</h1>
+          <p className="text-body text-foreground/70 mb-4">
+            Best suited to agencies and teams with defined outcomes or existing
+            design and technical direction.
+          </p>
           <p className="text-body text-foreground/70 mb-12">
-            Have a project in mind? Send a message and I&apos;ll get back to you.
+            Share a brief, scope, or timeline and I&apos;ll get back to you.
           </p>
           <ContactForm />
         </div>

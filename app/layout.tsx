@@ -14,15 +14,23 @@ const geistMono = Geist_Mono({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://leewilliams.dev";
 
+const siteDescription =
+  "Independent developer partnering with agencies and product teams on Next.js applications, marketing sites, and SaaS builds. Structured delivery, clean handoff, production-focused engineering. Based in Birmingham, UK.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "Lee Williams | Next.js Developer",
     template: "%s | Lee Williams",
   },
-  description:
-    "Next.js developer building fast, stable, trade-grade web applications. Birmingham, UK.",
-  keywords: ["Next.js", "React", "developer", "portfolio", "web development", "Birmingham"],
+  description: siteDescription,
+  keywords: [
+    "Next.js",
+    "React",
+    "agency overflow",
+    "web development partner",
+    "Birmingham",
+  ],
   authors: [{ name: "Lee Williams", url: siteUrl }],
   creator: "Lee Williams",
   openGraph: {
@@ -31,8 +39,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Lee Williams",
     title: "Lee Williams | Next.js Developer",
-    description:
-      "Next.js developer building fast, stable, trade-grade web applications. Birmingham, UK.",
+    description: siteDescription,
     images: [
       {
         url: "/og.png",
@@ -45,8 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Lee Williams | Next.js Developer",
-    description:
-      "Next.js developer building fast, stable, trade-grade web applications. Birmingham, UK.",
+    description: siteDescription,
   },
   robots: {
     index: true,
