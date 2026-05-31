@@ -16,6 +16,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "workshopos",
+    title: "workshopOS",
+    blurb: "Specialist vehicle platform for dealers, builders, and conversion businesses.",
+    image: "/workshop_mockup.png",
+    tech: ["Next.js", "Supabase", "Tailwind CSS", "Shadcn UI"],
+    tag: "New",
+    liveUrl: "https://workshopos-green.vercel.app/",
+  },
+  {
     slug: "zoohh",
     title: "Zoohh",
     blurb: "Pet records, care, and owner tools in one place.",
@@ -47,14 +56,6 @@ export const projects: Project[] = [
     blurb: "Architecture portfolio website for a local firm.",
     image: "/project-five.jpg",
     tech: ["Astro", "Sanity", "Tailwind CSS", "Shadcn UI"],
-    tag: "New",
-  },
-  {
-    slug: "bluephase-electrical",
-    title: "Bluephase Electrical",
-    blurb: "Electrical services business website.",
-    image: "/project-four.jpg",
-    tech: ["Next.js", "Tailwind CSS", "Shadcn UI"],
     tag: null,
   },
 ];
