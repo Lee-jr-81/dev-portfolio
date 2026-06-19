@@ -14,18 +14,20 @@ const geistMono = Geist_Mono({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://leewilliams.dev";
 
+
 const siteDescription =
-  "Independent developer partnering with agencies and product teams on Next.js applications, marketing sites, and SaaS builds. Structured delivery, clean handoff, production-focused engineering. Based in Birmingham, UK.";
+  "Small digital studio building modern web applications, commerce experiences and business systems with Next.js. Focused on performance, maintainability and creating software designed to evolve as businesses grow. Based in Birmingham, UK";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Lee Williams | Next.js Developer",
+    default: "Lee Williams | eCommerce Developer",
     template: "%s | Lee Williams",
   },
   description: siteDescription,
   keywords: [
     "Next.js",
+    "eCommerce",
     "React",
     "agency overflow",
     "web development partner",
@@ -38,20 +40,20 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteUrl,
     siteName: "Lee Williams",
-    title: "Lee Williams | Next.js Developer",
+    title: "Lee Williams | eCommerce Developer",
     description: siteDescription,
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Lee Williams - Next.js Developer",
+        alt: "Lee Williams - eCommerce Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lee Williams | Next.js Developer",
+    title: "Lee Williams | eCommerce Developer",
     description: siteDescription,
   },
   robots: {
