@@ -3,33 +3,33 @@ import Image from "next/image";
 const services = [
   {
     number: "01",
-    title: "Full-Stack Development",
+    title: "Modern Web Applications",
     description:
-      "Modern web application development using Next.js and scalable backend architecture, built for production environments.",
+      "Custom web applications built with Next.js for businesses that need fast, scalable software designed around real-world workflows.",
   },
   {
     number: "02",
-    title: "Component & UI Architecture",
+    title: "Commerce Experiences",
     description:
-      "Clean, reusable component systems with structured file organisation and long-term maintainability in mind.",
+      "High-performance ecommerce and headless commerce frontends focused on speed, flexibility and creating seamless customer experiences.",
   },
   {
     number: "03",
-    title: "Performance & Optimisation",
+    title: "Business Systems",
     description:
-      "Improving load times, bundle size, and application responsiveness through structured engineering decisions.",
+      "Inventory systems, customer portals and bespoke internal tools that help businesses streamline operations and grow over time.",
   },
   {
     number: "04",
-    title: "Agency Overflow Partner",
+    title: "Product & Technical Strategy",
     description:
-      "Taking responsibility for clearly defined projects and delivering them with minimal oversight and structured communication.",
+      "Helping businesses make informed decisions around architecture, scalability and how their digital products should evolve as they grow.",
   },
   {
     number: "05",
-    title: "Security & Light Pen Testing",
+    title: "Performance & Reliability",
     description:
-      "I prioritise security in how I design and ship software. I also run light web penetration tests to catch common vulnerabilities before release.",
+      "Building software with performance, maintainability and long-term reliability at its core, ensuring systems remain fast and easy to evolve.",
   },
 ];
 

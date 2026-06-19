@@ -17,11 +17,13 @@ export function Hero() {
       <div className="flex flex-col gap-8 md:mt-2 mt-10 lg:flex-row lg:items-center lg:gap-16 md:pb-40">
         {/* Left: Headings + description */}
         <div className="flex-1 space-y-2 md:space-y-4">
-          <h1 className="text-headline text-foreground/80">Next.js Developer</h1>
+          <h1 className="text-headline text-foreground/80">
+            Web App Developer
+          </h1>
           <p className="max-w-xl md:text-lead text-lg text-foreground/70 leading-snug">
-            Partnering with agencies and product teams on production-grade web
-            applications and high-performance sites — structured delivery, clean
-            architecture, and minimal oversight required.
+            Small digital studio building modern web applications, eCommerce
+            experiences and business systems. Focused on performance,
+            flexibility and creating software that evolves as businesses grow.
           </p>
           <p className="max-w-xl text-base text-foreground/60">
             Based in Birmingham, UK · working with clients across the UK

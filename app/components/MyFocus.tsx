@@ -37,56 +37,56 @@ const saasPillars: FocusPillar[] = [
 
 const focuses = {
   nextjs: {
-    title: "Full-Stack Projects",
+    title: "Modern Web Applications",
     logo: "/nextjs-logo.svg",
-    tagline: "End-to-end application development",
+    tagline: "Custom software built for growing businesses",
     benefits: [
       {
         title: "Structured Engineering",
         description:
-          "Clean architecture, maintainable code, and production-ready patterns from day one.",
+          "Clean architecture, maintainable code and production-ready patterns from day one.",
       },
       {
-        title: "Full-Stack Capability",
+        title: "End-to-End Delivery",
         description:
-          "Frontend, backend, database design, authentication, and deployment — handled end-to-end.",
+          "Frontend, backend, authentication, databases and deployment handled as a complete system.",
       },
       {
-        title: "Testing & Quality",
+        title: "Business-First Architecture",
         description:
-          "Proper testing workflows, error handling, and validation built into the development process.",
+          "Software designed around real workflows, customers and business goals — not just technical requirements.",
       },
       {
-        title: "Agency-Ready Delivery",
+        title: "Built to Evolve",
         description:
-          "Clear documentation, structured handoff, and minimal oversight required during development.",
+          "Flexible foundations that can grow as businesses add new products, services and capabilities.",
       },
     ],
   },
-  astro: {
-    title: "Content & Marketing Sites",
-    logo: "/astro-logo.svg",
-    tagline: "Speed-first, SEO-optimized delivery",
+  shopify: {
+    title: "Commerce Experiences",
+    logo: "/shopify_glyph.svg",
+    tagline: "Flexible ecommerce built around your business",
     benefits: [
       {
-        title: "Lighthouse Performance",
+        title: "Headless Commerce",
         description:
-          "Consistently hitting 95+ scores across performance, accessibility, and SEO metrics.",
+          "Fast, modern storefronts powered by Shopify with complete control over the customer experience.",
       },
       {
-        title: "Fast Load Times",
+        title: "Beyond The Theme",
         description:
-          "Optimized assets, minimal JavaScript, and edge-ready architecture for instant page loads.",
+          "Commerce experiences designed for businesses that need more than a standard Shopify theme can offer.",
       },
       {
-        title: "SEO Foundation",
+        title: "Integrated Systems",
         description:
-          "Structured data, meta tags, sitemaps, and crawlability built in from the start.",
+          "Inventory, content, customer accounts and commerce working together as a single experience.",
       },
       {
-        title: "Content-First Workflow",
+        title: "Growth Ready",
         description:
-          "Clean CMS integration, markdown support, and editor-friendly content management.",
+          "Architecture designed to adapt as businesses expand into new products, markets and revenue streams.",
       },
     ],
   },
@@ -96,19 +96,20 @@ export function MyFocus() {
   return (
     <section className="border-t border-foreground/10 py-40">
       <div>
-        <div className=" max-w-3xl">
+        <div className="max-w-3xl">
           <h2 className="text-sm md:mb-0 mb-1 font-medium uppercase tracking-wider text-foreground/60">
-            What I Focus On
+            What I Build
           </h2>
+
           <h3 className="text-headline font-semibold mb-6 md:mb-4">
-            My Core Systems
+            Modern applications, commerce experiences and software products
           </h3>
+
           <p className="text-body text-foreground/80">
-            I specialise in two distinct types of projects for agencies —
-            full-stack applications and high-performance marketing sites. I
-            also take many of those builds through to production SaaS launches
-            for real customers. Each context needs a different approach,
-            tooling, and priorities.
+            I build modern web applications, commerce experiences and SaaS
+            products for ambitious businesses. Each project has different
+            requirements, but the goal is always the same — fast, scalable
+            software designed to grow alongside the businesses that use it.
           </p>
         </div>
 
@@ -150,32 +151,32 @@ export function MyFocus() {
             </div>
           </div>
 
-          {/* Astro Card */}
+          {/* Shopify Card */}
           <div className="rounded-2xl border border-foreground/10 bg-foreground/2 p-8 md:p-10">
             <div className="mb-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="relative size-8 shrink-0">
                   <Image
-                    src={focuses.astro.logo}
-                    alt="Astro logo"
+                    src={focuses.shopify.logo}
+                    alt="Shopify logo"
                     fill
                     className="object-contain"
                   />
                 </div>
-                <span className="text-4xl font-semibold">Astro</span>
+                <span className="text-4xl font-semibold">Shopify</span>
               </div>
               <div>
                 <h4 className="md:text-2xl text-lg font-semibold text-primary">
-                  {focuses.astro.title}
+                  {focuses.shopify.title}
                 </h4>
                 <p className="text-sm text-foreground/60">
-                  {focuses.astro.tagline}
+                  {focuses.shopify.tagline}
                 </p>
               </div>
             </div>
 
             <div className="mt-8 space-y-6">
-              {focuses.astro.benefits.map((benefit) => (
+              {focuses.shopify.benefits.map((benefit) => (
                 <div key={benefit.title}>
                   <h5 className="text-lg font-semibold">{benefit.title}</h5>
                   <p className="mt-2 text-body text-foreground/70">
@@ -203,10 +204,10 @@ export function MyFocus() {
               </div>
               <div>
                 <h4 className="md:text-2xl text-lg font-semibold text-primary">
-                  SaaS & product builds
+                  Interactive Products & SaaS
                 </h4>
                 <p className="text-sm text-foreground/60">
-                  End-to-end delivery for software people pay to use
+                  Buiding software businesses rely on every day
                 </p>
               </div>
             </div>
