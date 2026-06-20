@@ -25,9 +25,7 @@ export function Hero() {
             experiences and business systems. Focused on performance,
             flexibility and creating software that evolves as businesses grow.
           </p>
-          <p className="max-w-xl text-base text-foreground/60">
-            Based in Birmingham, UK · working with clients across the UK
-          </p>
+          
         </div>
 
         {/* Right: Avatar + location */}
