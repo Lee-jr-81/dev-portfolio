@@ -31,7 +31,6 @@ export const projects: Project[] = [
     image: "/project-six.png",
     tech: ["Next.js", "Supabase", "Tailwind CSS", "Shadcn UI"],
     tag: null,
-    liveUrl: "https://zoohh.uk",
   },
   {
     slug: "adventureready-uk",

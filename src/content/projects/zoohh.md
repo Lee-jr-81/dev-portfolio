@@ -46,6 +46,4 @@ Key implementation areas included:
 
 ## Outcome
 
-Zoohh delivers a focused foundation for pet-centred record keeping and owner tooling, with a stack and architecture that can grow as features expand.
-
-The live product is available at [zoohh.uk](https://zoohh.uk).
+Zoohh delivers a focused foundation for pet-centred record keeping and owner tooling, with a stack and architecture built to grow as features expand.
